@@ -112,6 +112,16 @@
     vertical-align: top;
 }
 
+.product-box .thumb-bd::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .08;
+    border: 1px solid #000;
+}
+
 /* 창고1-이미지가 나오고 싶다면 나를 거치세요 */
 .header .service-area a::after,
 .header .logo a::before,
@@ -129,7 +139,15 @@
 .group-shop .btn .prev::before,
 .group-shop .btn .next::before,
 .group-shop .page-box .prev::before,
-.group-shop .page-box .next::before{
+.group-shop .page-box .next::before,
+.footer .link-all::after,
+.header .search-area .ico-keyboard,
+.header .search-area .ico-complete,
+.ico-mail,
+.nav.shop::before,
+.nav.shoplive::before, .ico-tv,
+.group-nav .btn-more::after,
+.gnb .temper-box .max::before {
     background-image: url(../img/sp-bg.png);
     background-size: 442px;
     background-repeat: no-repeat;
@@ -147,8 +165,20 @@
 /* 창고3 */
 
 .link-shop::before,
-.link-shop::after{
+.link-shop::after,
+.deal-logo::before,
+.one-plus,
+.thumb-box.plus::before{
     background-image: url(../img/sp-bg3.png);
     background-size: 129px;
+    background-repeat: no-repeat;
+}
+
+
+
+/* 창고4 */
+.gnb .current-box::before {
+    background-image: url(../img/sp-bg4.png);
+    background-size: 215px;
     background-repeat: no-repeat;
 }

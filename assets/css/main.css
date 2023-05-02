@@ -377,7 +377,7 @@
 .group-theme.list2 .recipe-list .content-list{
     display: grid;
     gap: 21px;
-    grid-template-columns: 170px auto;
+    grid-template-columns: 172px auto;
     align-items: center;
 }
 
@@ -531,21 +531,21 @@
     margin-left: 6px;
 }
 
-.btn-more {    
+.recipe-content .btn-more {    
     position: relative;
     padding-top: 36px;
     margin-bottom: 42px;
     border-bottom: 1px solid #e4e8eb;
 }
 
-.btn-more .ico-more {
+.recipe-content .btn-more .ico-more {
     width: 42px;
     height: 42px;
     background-position: 0 -342px;
     display: block;
 }
 
-.btn-more p {
+.recipe-content .btn-more p {
     top: 62px;
     position: absolute;
     left: 47%;
@@ -617,6 +617,7 @@
 
 .group-shop .shop-area {
     border: 1px solid #e4e8eb;
+    padding-bottom: 15px;
 }
 
 .group-shop .shop-area .shop-list {
@@ -771,8 +772,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
-.group-shop .news-title .title{}
 .group-shop .news-title .title strong{
     font-weight: bold;
     color: #000;
@@ -781,12 +782,13 @@
 .group-shop .news-title .control-wrap{
     position: absolute;
     right: 0;
+    display: flex;
+    align-items: center;
 }
 .group-shop .shopNews-list{
     margin: 13px 5px 0;
     line-height: 28px;
 }
-.group-shop .shopNews-list .shopNews-item{}
 .group-shop .shopNews-item a{
     position: relative;
 }
@@ -802,4 +804,146 @@
 .group-shop .shopNews-item .title{
     font-weight: bold;
 }
-.group-shop .shopNews-item span{}
+
+.group-shop .shop-plus{
+    position: relative;
+    padding: 55px 0 19px;
+    margin: 0 8px;
+    border-top: 1px solid #e4e8eb;
+}
+.group-shop .shop-plus .category-wrap{
+}
+.group-shop .category-wrap .category-title{
+    position: absolute;
+    top: 20px;
+    left: 5px;
+}
+.group-shop .category-title .category{
+    display: inline-block;
+    vertical-align: 0;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 500;
+    letter-spacing: -.5px;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+}
+.group-shop .category-title .category+.category {
+    margin-left: 12px;
+}
+.group-shop .category.active{
+    color: #03c75a;
+    font-weight: 700;
+    border-color: #19ce60;
+}
+.group-shop .category-wrap .control-wrap{
+    position: absolute;
+    top: 14px;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+.group-shop .product-wrap{
+    display: flex;
+    gap: 5px;
+}
+.group-shop .product-box p{
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.group-shop .shop-deal{
+    position: relative;
+    padding-top: 16px;
+    margin: 0 8px;
+    border-top: 1px solid #e4e8eb;
+}
+.group-shop .shop-deal .deal-title{}
+.group-shop .deal-title .deal-logo::before{
+    display: inline-block;
+    width: 40px;
+    height: 21px;
+    background-position: 0 -54px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    content: '';
+    margin-right: 7px;
+}
+.group-shop .deal-title .oneDeal-txt{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 21px;
+}
+.group-shop .shop-deal .control-wrap{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+.group-shop .deal-list {
+    margin-top: 20px;
+}
+.group-shop .deal-list .deal-item+.deal-item {
+    margin-top: 15px;
+}
+.group-shop .deal-item .deal-box {
+    display: flex;
+}
+.group-shop .deal-item .deal-thumb {
+    display: flex;
+    gap: 10px;
+}
+.group-shop .deal-thumb .thumb-box {
+    position: relative;
+    width: 85px;
+    height: 60px;
+}
+.group-shop .deal-thumb .thumb-box::after {
+    border-radius: 4px;
+    
+}
+.group-shop .deal-thumb .thumb-box.plus {
+    width: 60px;
+    position: relative;
+}
+.group-shop .deal-thumb .thumb-box.plus::before {
+    position: absolute;
+    top: 20px;
+    left: -15px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: -109px 0;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    z-index: 1;
+}
+.group-shop .thumb-box .one-plus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    background-position: -42px -54px;
+    background-repeat: no-repeat;
+}
+.group-shop .deal-item .deal-txt {
+    margin-left: 10px;
+}
+.group-shop .deal-txt .title {
+    line-height: 17px;
+}
+.group-shop .deal-txt .price-wrap {
+    margin-top: 5px;
+    font-weight: 700;
+}
+.group-shop .deal-txt .discount {
+    color: #f04045;
+}
+
+
+
